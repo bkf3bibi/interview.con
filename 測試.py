@@ -165,12 +165,29 @@ if st.button("🔥 一鍵確認轉譯履歷", type="primary", use_container_widt
             
             st.write("---")
             
-        # 6. 底部強烈引導付費跳轉 Portaly
-        st.markdown("<h3 style='text-align: center;'>💰 想要直接複製完整「長句範本」與「面試反擊話術」嗎？</h3>", unsafe_allow_html=True)
+       # 6. 底部強烈引導付費跳轉 Portaly
+        st.markdown("<br><h3 style='text-align: center;'>💰 想要直接複製完整「長句範本」與「面試反擊話術」嗎？</h3>", unsafe_allow_html=True)
         
-        portaly_url = "https://portaly.cc/你的帳號"  # 👈 在這裡填入你的 Portaly 連結
-        st.link_button(
-            label="🚀 點此付費 $399 一鍵解鎖完整大腦 ➔",
-            url=portaly_url,
-            use_container_width=True,
-        )
+        # 你的 Portaly 購買網址（記得把下面換成你真正的 Portaly 網址喔！）
+        portaly_url = "https://portaly.cc/你的帳號"  
+        
+        # 使用最穩定的 HTML/CSS 按鈕語法，在雲端絕對不會變成黑方框
+        button_html = f"""
+        <a href="{portaly_url}" target="_blank" style="text-decoration: none;">
+            <div style="
+                background-color: #ff4b4b; 
+                color: white; 
+                text-align: center; 
+                padding: 15px; 
+                border-radius: 10px; 
+                font-weight: bold; 
+                font-size: 18px; 
+                box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+                cursor: pointer;
+                margin-top: 10px;
+                width: 100%;">
+                🚀 點此付費 $399 一鍵解鎖完整大腦 ➔
+            </div>
+        </a>
+        """
+        st.markdown(button_html, unsafe_allow_html=True)
