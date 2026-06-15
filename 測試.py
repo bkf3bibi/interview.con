@@ -3,6 +3,20 @@ import streamlit as st
 # 1. 網頁基本設定（優化手機與電腦版版面）
 st.set_page_config(page_title="行政打雜履歷一鍵轉譯機", layout="centered")
 
+st.markdown(
+    """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .viewerBadge_container__1QSob {display: none !important;}
+    input[type="checkbox"] {transform: scale(1.2); cursor: pointer;}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # 2. 網頁標題與介紹（完全對齊視覺）
 st.markdown("<h1 style='text-align: center;'>💼 行政打雜履歷一鍵轉譯機</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>一秒將日常雜事，轉譯為人資最愛的高大上技能標籤！</h3>", unsafe_allow_html=True)
