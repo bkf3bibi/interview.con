@@ -6,10 +6,18 @@ st.set_page_config(page_title="行政打雜履歷一鍵轉譯機", layout="cente
 st.markdown(
     """
     <style>
+    /* 隱藏右上角與所有預設選單 */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+    
+    /* 💥 核心：徹底拔掉右下角的 Streamlit 紅色皇冠與所有 Toolbar 標籤 */
+    [data-testid="stStatusWidget"] {visibility: hidden;}
     .viewerBadge_container__1QSob {display: none !important;}
+    div[class^="viewerBadge"] {display: none !important;}
+    button[title="View source code"] {display: none !important;}
+    
+    /* 讓勾選方塊在手機上大一點好點擊 */
     input[type="checkbox"] {transform: scale(1.2); cursor: pointer;}
     </style>
     """,
