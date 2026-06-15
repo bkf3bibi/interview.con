@@ -186,7 +186,7 @@ if st.button("🔥 一鍵確認轉譯履歷", type="primary", use_container_widt
                 cursor: pointer;
                 margin-top: 10px;
                 width: 100%;">
-                🚀 點此付費 $399 一鍵解鎖完整大腦 ➔
+                🚀 點此付費 $99 一鍵解鎖完整大腦 ➔
             </div>
         </a>
         """
